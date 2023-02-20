@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            function add(){
+                var x,y,sum;
+                 x=parseInt(document.getElementById("num1").value);
+                 y=parseInt(document.getElementById("num2").value);
+                 sum=x+y;
+               document.getElementById("disp").value=sum;
+            
+            }
+            function sub(){
+                var x,y,sum;
+                 x=parseInt(document.getElementById("num1").value);
+                 y=parseInt(document.getElementById("num2").value);
+                 sum=x-y;
+               document.getElementById("disp").value=sum;
+            
+            }
+            function mul(){
+                var x,y,sum;
+                 x=parseInt(document.getElementById("num1").value);
+                 y=parseInt(document.getElementById("num2").value);
+                 sum=x*y;
+               document.getElementById("disp").value=sum;
+            
+            }
+            function div(){
+                var x,y,sum;
+                 x=parseInt(document.getElementById("num1").value);
+                 y=parseInt(document.getElementById("num2").value);
+                 sum=x/y;
+               document.getElementById("disp").value=sum;
+            
+            }
+            function mod(){
+                var x,y,sum;
+                 x=parseInt(document.getElementById("num1").value);
+                 y=parseInt(document.getElementById("num2").value);
+                 sum=x%y;
+               document.getElementById("disp").value=sum;
+            
+            }
+        </script>
+            <label>Number 1</label><input type="number" id="num1"><br>
+            <label>Number 2</label><input type="number" id="num2"><br>
+            <button onclick="add()">Add</button><br>
+            <button onclick="sub()">Subtract</button><br>
+            <button onclick="mul()">Multiplication</button><br>
+            <button onclick="div()">Division</button><br>
+            <button onclick="mod()">Mod</button><br>
+            <p>sum=<input type="" id="disp"></p>
+            
+            
+    </body>
+</html>
