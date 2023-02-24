@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            function check(){
+                var x;
+                 x=parseInt(document.getElementById("num1").value);
+                 
+                 if(x<0){
+                    
+                    document.getElementById("disp").value="Negative";
+                 }
+                 else if(x==0){
+                    document.getElementById("disp").value="0";
+                 }
+                 else {
+                    document.getElementById("disp").value="Positive";
+                 }
+            
+            }
+        </script>
+            <label>Number</label><input type="number" id="num1"><br>
+            <button onclick="check()">Check</button><br>
+            <input type="text" id="disp">
+            
+    </body>
+</html>
